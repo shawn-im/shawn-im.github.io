@@ -26,12 +26,16 @@
 html, 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 img {
     height: 100%;
     width: 100%;
+}
+
+.u-textLeft {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .u-textCenter {
@@ -49,10 +53,9 @@ img {
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
-    justify-content: center;
+    justify-content: left;
     word-wrap: break-word;
-    align-items: center;
-    border: 1px solid black;
+    align-items: left;
 }
 
 .box {
