@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shawn Im</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav class="navContainer">
-            <h1 class="navTitle"></h1>
-        </nav>
-        <h1 class="u-textLeft">Shawn Im</h1>
-        <section class="u-textLeft">
-            <p> Hello! I am a rising senior at MIT majoring in Mathematics (18) and Computer Science (6-3). I am interested in statistics and machine learning particularly in 
-                statistical learning theory and interpretable machine learning as well as random matrix theory, high-dimensional statistics, and probability. </p>
-        </section>
-        <section class="u-textLeft">
-            <h2> Current Classes/Projects</h2>
-            18.434 Seminar in Theoretical Computer Science
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Research </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Other </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            
+            <div class="container mt-5">
+                <h2 class="u-textLeft">Shawn Im</h2>
+            </div>
+            <div class="row mx-5">
+                <div class="col-9">
+                    <p style="font-size:18px;"> Hello! I am an first year Computer Science PhD student at UW-Madison where I will be working with Prof. <a href="https://pages.cs.wisc.edu/~sharonli/index.html">Sharon Li</a>. 
+                      I am interested in understanding the behaviors of machine learning models and developing methods that allows these behaviors to be understood by people in hopes of
+                      minimizing harm that results from such models. Currently, I am working on </p>
+                    <ul style="font-size:18px;">
+                      <li>Representation Learning</li>
+                      <li>Interpretability</li>
+                      <li>In-Context Learning</li>
+                      <li>Feature Attribution Methods</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <img src="profile.jpg" class="img-fluid p-4" alt="Picture">
+                </div>
+            </div>
+                
+            
+        </div>
+        
 
-            <h2> Past Classes/Projects </h2>
-            <h3> Spring 2022 </h3>
-            18.656 Mathematical Statistics: A Non-asymptotic Approach<br>
-            18.676 Stochastic Calculus<br>
-            8.044 Statistical Physics<br>
-            8.04 Quantum Physics<br>
-            <h3> Fall 2021 </h3>
-            Tutor at Math Learning Center: Tutoring students primarily for 18.01, 18.02, and 18.100<br>
-            <br>
-            18.112 Functions of a Complex Variable<br>
-            6.255 Optimization Methods<br>
-            8.03 Vibrations and Waves<br>
-            7.012 Introduction to Biology<br>
-            STS.004 Intersections: Science, Technology, and the World<br>
-            <h3> Summer 2021 </h3>
-            Software Engineer Internship at Amazon: Worked on a data management project using AWS
-            <h3> Spring 2021 </h3>
-            18.408 Theory of Deep Learning <a href="./18_408_project.pdf">Final Project</a><br>
-            6.864 Natural Language Processing <a href="./NLP_Project.pdf">Final Project</a><br>
-            6.851 Advanced Data Structures <a href="https://github.com/6851-2021/fractional-cascading">Project</a><br>
-            6.031 Software Construction<br>
-            21M.226 Jazz<br>
-            <h3> Fall 2020 </h3>
-            UROP with Julia Lab: Prototyping a surrogate model for catalysts in batteries<br>
-            <br>
-            18.338 Eigenvalues of Random Matrices <br>
-            18.675 Theory of Probability <a href="./18_675_final.pdf">Final Project</a><br>
-            6.004 Computation Structures <br>
-            3.091 Intro to Solid State Chemistry <br>
-            24.900 Intro to Linguistics <br>
-            <h3> Summer 2020 </h3>
-            UROP with Julia Lab: Worked on using physics informed neural networks to solve differential equations and applying them to non-linear equations
-            <h3> Spring 2020 </h3>
-            UROP with Media Lab: Worked on using neural networks with force sensors to solve an inverse problem of detecting a person's movement<br>
-            UROP with Julia Lab: Worked on using neural networks to solve differential equations and applying them to chemical reactions<br>
-            <br>
-            18.100B Real Analysis <br>
-            6.046 Design and Analysis of Algorithms <br>
-            18.032 Differential Equations <br>
-            6.009 Fundamentals of Programming <br>
-            21M.301 Harmony and Counterpoint 1 <br>
-            <h3> Fall 2020 </h3>
-            UROP with Media Lab: Worked on using neural networks with force sensors to solve an inverse problem of detecting a person's movement<br>
-            <br>
-            18.211 Combinatorial Analysis <br>
-            6.042 Math for Computer Science <br>
-            6.003 Signals and Systems <br>
-            21L.007 World Literatures <br>
-        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
     </body>
 </html>
